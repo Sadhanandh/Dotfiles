@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Type=Application
+Name=Synapse
+Comment=Search everything you do.
+Exec=synapse
+Icon=synapse
+Categories=GNOME;Utility;
+X-XFCE-Source=file:///usr/share/applications/synapse.desktop

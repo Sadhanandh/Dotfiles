@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Tor-Browser
+Exec=/home/xadmin/usr/tor-browser/start-tor-browser
+Type=Application
+Categories=Internet;Web;
+Comment=Tor Browser Bundle
+Terminal=false
+Icon=/home/xadmin/usr/tor-browser/toricon.png

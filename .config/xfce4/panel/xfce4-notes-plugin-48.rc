@@ -1,0 +1,72 @@
+
+[Notes]
+PosX=1208
+PosY=367
+Width=158
+Height=199
+TabsOrder=Notes 3;Notes 2;
+LastTab=1
+Above=true
+Sticky=true
+Transparency=6
+Visible=false
+
+[Notes 2]
+PosX=1207
+PosY=211
+Width=159
+Height=147
+TabsOrder=Notes;Notes 2;
+LastTab=1
+Above=true
+Sticky=true
+Transparency=6
+Visible=false
+
+[Notes 3]
+PosX=1133
+PosY=109
+Width=233
+Height=203
+TabsOrder=Notes;
+LastTab=0
+Above=true
+Sticky=true
+Transparency=6
+Visible=false
+
+[Notes 4]
+PosX=1110
+PosY=373
+Width=240
+Height=300
+TabsOrder=Notes;
+LastTab=0
+Above=true
+Sticky=true
+Transparency=6
+Visible=false
+
+[Notes 5]
+PosX=330
+PosY=468
+Width=240
+Height=300
+TabsOrder=Notes;
+LastTab=0
+Above=true
+Sticky=true
+Transparency=6
+Visible=false
+
+[Notes 6]
+PosX=563
+PosY=234
+Width=240
+Height=300
+TabsOrder=Notes;
+LastTab=0
+Above=true
+Sticky=true
+Transparency=6
+Visible=false

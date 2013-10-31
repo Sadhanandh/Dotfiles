@@ -1,0 +1,35 @@
+[OPTIONS]
+textforeground=Black
+height=749
+textnumberforeground=Black
+width=681
+textselbackground=#0a246a
+linesnum=1
+textfont=Helvetica,100,normal,regular
+texthiliteforeground=Black
+textcursor=Black
+searchpath=
+tabcols=8
+texthilitebackground=#ff8080
+wrapcols=80
+hidetoolbar=0
+stripreturn=0
+hilitematchtime=3000
+textnumberbackground=Gray100
+textbackground=Gray100
+hidestatus=0
+wordwrap=0
+textselforeground=Gray100
+
+[SETTINGS]
+basecolor=#ede9e3
+tiptime=10000
+tippause=500
+
+[Recent Files]
+FILE4=/home/xadmin/flask eg/app.py
+FILE5=/home/xadmin/flask eg/a.txt
+FILE2=/home/xadmin/a.py
+FILE3=/home/xadmin/flask eg/venv/app.py
+FILE1=/home/xadmin/dryscrape/requirements.txt
+

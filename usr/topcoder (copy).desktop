@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TopCoder
+Comment=The Local Install
+Exec=/usr/lib/jvm/java-6-sun/bin/javaws /home/xadmin/usr/TopCoder/ContestAppletProd.jnlp
+Icon=/home/xadmin/usr/TopCoder/topcoder.png
+Categories=Application;Development;Mobile;IDE
+Version=0.8
+Type=Application
+Terminal=0
+

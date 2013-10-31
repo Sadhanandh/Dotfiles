@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Zotero
+Comment=Zotero application
+Exec="/home/xadmin/usr/Zotero/zotero"
+Icon=/home/xadmin/usr/Zotero/icons/zotero.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;Utility;Internet;
+

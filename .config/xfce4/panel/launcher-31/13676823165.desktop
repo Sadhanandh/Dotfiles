@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Aptana IDE
+Comment=The Local Install
+Exec=/home/xadmin/usr/Aptana_Studio_3/AptanaStudio3
+Icon=/home/xadmin/usr/Aptana_Studio_3/icon.xpm
+Categories=Application;Development;Web;IDE
+Version=0.8
+Type=Application
+Terminal=0
+Name[en_IN]=Aptana-IDE
+X-XFCE-Source=file:///home/xadmin/.local/share/applications/Aptana-IDE.desktop

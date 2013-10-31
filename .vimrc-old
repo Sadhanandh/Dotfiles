@@ -1,0 +1,426 @@
+"helptags ~/.vim/doc
+""easy motion \\w
+""matchit %
+""shft-K man pages in python too
+"" ys add    (till) can be s //yss"    surround
+"" cs change			be t //cst"
+"" ds delete			be iw // ys3iw
+"nerdcomment
+"" \cc -> comment
+"" \cu -> uncomment
+"" \c$  -> end of line
+"" \cA -> append after line
+
+"" ce sparkup-
+"" cy zen
+
+"" \\e -> easymotion
+"" \\w ->
+"" \\fo -> 
+
+"" Pyer and Pyea
+
+"GundoToggle 
+"nnoremap <F5> :GundoToggle<CR>
+",cc -> comment
+",cs -> sexy comment
+",cb -> alligned
+",c<space> -> toggle comment
+"
+"Fold (simple Fold)
+" zM -> fold all
+" zR -> remove all
+" zf/} -> fold till
+" zf3j -> fold 3 lines
+" za -> unfold
+
+"set paste
+
+
+"let g:SingleCompile_showquickfixiferror = 1.
+"let g:SingleCompile_silentcompileifshowquickfix = 1
+
+set title
+set et!
+set list
+set expandtab
+set tabstop=4
+set shiftwidth=4
+map <F2> :retab <CR> :wq! <CR>
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"
+Bundle 'vim-scripts/AutoComplPop'
+"Bundle 'tpope/vim-endwise'
+"Bundle 'vim-ruby/vim-ruby'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'yandy/vim-omnicppcomplete'
+"Bundle 'HenningM/cvim-pathogen'
+Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'sjl/gundo.vim'
+Bundle 'serby/vim-historic'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'hallison/vim-markdown'
+Bundle 'nvie/vim-flake8'
+"Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Sadhanandh/vim-ivundler'
+ "Bundle 'tomasr/molokai'
+"Bundle 'tmhedberg/SimpylFold'
+"Bundle 'shanzi/autoHEADER' 
+Bundle 'vim-scripts/python_match.vim'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'godlygeek/tabular'
+"Bundle 'shawncplus/phpcomplete.vim'
+ "Bundle 'arnaud-lb/vim-php-namespace'
+ "Bundle 'vim-scripts/AutoTag'
+"Bundle 'ervandew/supertab'
+"Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-fugitive'
+ "Bundle 'mkitt/markdown-preview.vim' <-- no xdg-open :(
+Bundle 'changa/markdown-preview.vim'
+ "Bundle 'FredKSchott/CoVim'
+"Bundle 'rainerborene/vim-pony'
+"Bundle 'jmcantrell/vim-virtualenv'
+"Bundle 'cwood/vim-django'
+"Bundle 'vim-scripts/django.vim' 
+"Bundle 'oscarh/vimerl'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'tomtom/tcomment_vim'
+"
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/vim-snippets'
+Bundle 'garbas/vim-snipmate'
+
+
+
+"let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_detect_filetype = 1
+let g:gist_show_privates = 1
+let g:gist_post_private = 1
+let g:gist_open_browser_after_post = 1
+
+
+"let g:erlangFoldSplitFunction = 1
+"let g:erlangHighlightBif = 1
+let g:erlangCompletionGrep='zgrep'
+let g:erlangManSuffix='erl\.gz'
+"<Alt-r>f - function
+"<Alt-r>v - variable
+"<Alt-r>t - tuple
+
+
+"let g:MarkdownPreviewAlwaysOpen = 1
+"let g:MarkdownPreviewTMP = '/tmp'
+"let g:MarkdownPreviewUserStyles = ~/Sites/themes/markdown/
+"let g:MarkdownPreviewDefaultStyles = $HOME.'/.vim/stylesheets/'
+"let g:MarkdownPreviewRefreshDelay = 20
+"
+
+let g:virtualenv_directory = "~/virtualenvs/"
+
+
+
+"let g:django_projects = '~/Projects' "Sets all projects under project
+let g:project_directory = $HOME.'/Projects/newdjango/newtest/newtest/' "Sets all projects under project
+"let g:django_project_container = 'source' "Inside of these folders look for source
+let g:django_activate_virtualenv = 1 "Try to activate the associated virtualenv
+let g:django_activate_nerdtree = 1 "Try to open nerdtree at the project root.
+
+au BufRead,BufNewFile *.md set filetype=markdown
+hi link mkdLineBreak Underlined
+
+"http://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about?rq=1
+cmap w!! w !sudo tee %
+
+
+set wildmode=longest,list,full
+set wildmenu
+set wildignorecase
+
+let loaded_supertab = 1
+
+"let g:autotagDisabled=1
+"php-namespace
+"\e -> expand 
+"\u -> use class
+
+
+"autocmd FileType python set ft=python.django " For SnipMate
+"autocmd FileType html set ft=htmldjango.html " For SnipMate
+
+autocmd FileType html let b:surround_{char2nr("v")} = "{{ \r }}"
+autocmd FileType html let b:surround_{char2nr("{")} = "{{ \r }}"
+autocmd FileType html let b:surround_{char2nr("%")} = "{%  \r %}"
+autocmd FileType html let b:surround_{char2nr("b")} = "{% block \1block name: \1 %}\r{% endblock \1\1 %}"
+autocmd FileType html let b:surround_{char2nr("i")} = "{% if \1condition: \1 %} \n \r \n {% endif %}\n"
+autocmd FileType html let b:surround_{char2nr("w")} = "{% with \1with: \1 %}\r{% endwith %}"
+autocmd FileType html let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\n \r \n{% endfor %}\n"
+autocmd FileType html let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
+
+
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_max_depth = 5
+
+
+
+inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
+noremap <Leader>e :call PhpExpandClass()<CR>
+
+cabbrev q lcl\|q
+let $VIMHOME=expand('<sfile>:p:h:h')
+let g:C_CodeSnippets = $HOME."/Dropbox/codesnippets/"
+set nu
+set mouse=a
+set cursorline  
+set nocp
+filetype plugin on
+set undolevels=1000
+set showmatch
+set showmode
+set autoindent
+set smartindent
+set ts=4
+set sw=4
+filetype indent on 
+syntax enable
+set background=dark
+set showfulltag
+set autoread
+set ignorecase
+"highlight search
+set hlsearch
+set spell
+" can be made manual
+set foldmethod=syntax
+set foldlevel=20
+set ttyfast
+
+nnoremap j gj
+nnoremap k gk
+nnoremap 0 g0
+nnoremap $ g$
+" also in visual mode
+vnoremap j gj
+vnoremap k gk
+vnoremap 0 g0
+vnoremap $ g$
+
+" set Term color to 256 (supports)
+set t_Co=256 
+" if solarized is enabled
+let g:solarized_termcolors=256
+colorscheme molokai
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#CompleteCpp
+
+
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-Space>
+"imap <leader>d <C-x><C-i> 
+"word completion
+"imap <leader>d <C-x><C-l>
+"line completion
+"imap <leader>d <C-x><C-f>
+"file completion
+"imap <leader>d <C-x><C-k>
+"dict completion
+"" helpme
+"if need full completion then do a control +d or control +l
+
+"set dictionary+=/usr/share/dict/words
+"set thesaurus+=$HOME."/.vim/thesaurus/mthesaur.txt"
+"let $THe = $HOME."/.vim/thesaurus/mthesaur.txt"
+"set thesaurus+=$THe
+
+
+
+
+
+"let g:snipMate = {}
+"let g:snipMate.scope_aliases = {}
+"let g:snipMate.scope_aliases['ruby'] = 'ruby,jruby'
+
+
+
+"au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
+"
+
+"http://vim.wikia.com/wiki/Disable_automatic_comment_insertion
+au FileType c,cpp setlocal comments-=:// comments+=f://
+au FileType vim setlocal comments-=:" "comments+=f:"
+
+
+let g:C_Ctrl_j="off"
+inoremap <C-k>  <UP>
+inoremap <C-j>  <DOWN>
+
+"http://vimcasts.org/episodes/bubbling-text/
+" Bubble single lines
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+" Bubble multiple lines
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]
+
+
+if has('win32')
+	colorscheme desert
+	set bs=2
+	autocmd FileType cpp set tags+=./vimfiles/tags/cpp
+else
+	autocmd FileType cpp set tags+=~/.vim/tags/cpp
+endif
+
+
+"AutoHeader
+let g:autoHEADER_auto_enable=0
+let g:autoHEADER_default_author = "Sadhanandh V"
+"let g:autoHEADER_fill_char_repeat =80
+
+" NerdTree
+let NERDTreeShowBookmarks=1
+" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_echo_current_error=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_enable_balloons = 1
+let g:syntastic_loc_list_height=2
+let g:syntastic_python_checkers=['pyflakes']
+" Tagbar
+let g:tagbar_width = 30
+
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std"]
+
+
+let OmniCpp_LocalSearchDecl = 1 " use local search function, bracket on 1st column
+let OmniCpp_DisplayMode = 1 
+
+"Tabularize
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+
+
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
+
+"map <F12> :!ctags -R --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
+
+"highlight CursorColumn guibg=#404040
+
+" custom Abbreviations
+cnoreabbrev cdc cd %:p:h <CR>
+cnoreabbre vff !firefox %:p
+"indent 
+cnoreabbrev ind :!indent %
+cnoreabbrev nt :NERDTreeToggle <CR>
+cnoreabbrev tb :TagbarToggle <CR> 
+cnoreabbrev na :NERDTreeToggle <CR>:TagbarToggle <CR> 
+
+autocmd FileType java map <silent><F9> :!javac %<cr>
+autocmd FileType java map <silent><C-F9> :!java %:t:r<cr>
+autocmd FileType java map <silent><F8> :!javac -Xlint:unchecked %<cr>
+autocmd FileType java map <silent><C-F8> :!java %:t:r 
+
+
+
+autocmd FileType cpp map <silent><F9> :!g++ -o %:r %<cr>
+autocmd FileType cpp map <silent><C-F9> :!java %:t:r<cr>
+" File insert
+map <leader>ff :r !echo ~/
+" reg view
+map <leader>] :reg<CR>
+" Change Directory
+nnoremap <leader>cdc :cd %:p:h<CR>:pwd<CR>
+inoremap <C-space> <C-x><C-o>
+" Zencoding
+let g:user_zen_expandabbr_key = '<C-y>' 
+
+
+noremap <F12> :SyntasticToggleMode <CR>
+autocmd FileType python map <silent><F9> :!python %<cr>
+autocmd FileType python map <silent>\rr :!python %<cr>
+noremap <silent><F8> :call C_Run()<cr> 
+noremap <silent><F7> :IRun<cr>
+noremap <silent><F6> :NERDTreeToggle<cr>
+noremap <silent><F5> :TagbarToggle<CR>
+noremap <silent><F4> :TaskList<CR> :NERDTree %:p:h<CR> :TagbarOpen<CR> 
+noremap <silent><C-F3> :GundoToggle<CR> 
+nnoremap <leader>n :NumbersToggle<CR>
+
+nmap <silent> <A-Up> :wincmd K<CR>
+nmap <silent> <A-Down> :wincmd J<CR>
+nmap <silent> <A-Left> :wincmd H<CR>
+nmap <silent> <A-Right> :wincmd L<CR>
+
+"numbers toggle
+"let g:loaded_numbers = 1
+
+let mapleader = "," " rebind <Leader> key
+
+"jedi
+"let g:jedi#auto_initialization = 0
+let g:jedi#popup_on_dot = 0
+let g:jedi#auto_vim_configuration = 0
+"let g:jedi#popup_on_dot = 1
+let g:jedi#popup_select_first = 0
+let g:jedi#show_function_definition = 0
+autocmd FileType python map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+
+vnoremap < <gv " better indentation
+vnoremap > >gv " better indentation
+map <Leader>a ggVG " select all
+
+	
+"let g:SimpylFold_docstring_preview = 1
+
+
+"" set nobackup
+"" set nowritebackup
+"" set noswapfile
+
+
+map <leader>s :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+
+map <leader>h :AutoHeader<CR>
+
+""inoremap ( ()<Esc>i
+""inoremap " ""<Esc>i
+""inoremap ' ''<Esc>i
+
+let g:C_Styles = { ' *.h' : 'C', '*.cc': 'CPP' }
+
+
+iabbrev im I'm

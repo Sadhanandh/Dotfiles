@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Android-IDE
+Comment=The Local Install
+Exec=/home/xadmin/usr/adt-bundle-linux-x86/eclipse/eclipse
+#Icon=/home/xadmin/usr/adt-bundle-linux-x86/eclipse/icon.xpm
+Icon=/home/xadmin/usr/adt-bundle-linux-x86/eclipse/adt.png
+Categories=Application;Development;Mobile;IDE
+Version=0.8
+Type=Application
+Terminal=0
+

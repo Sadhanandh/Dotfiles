@@ -1,0 +1,18 @@
+nb_lines=2
+nb_launcher=2
+extra_spacing=0
+has_tooltips=true
+has_labels=false
+
+[launcher_2]
+command=xterm -e vi
+name=Vi
+icon_name=/usr/share/pixmaps/vim.svg
+icon_id=21
+
+[launcher_1]
+command=chromium-browser
+name=chromium
+icon_name=/usr/share/pixmaps/chromium-browser.png
+icon_id=21
+

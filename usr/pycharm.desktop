@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PyCharm
+Comment=The Local Install
+Exec=/home/xadmin/usr/pycharm-community/bin/pycharm.sh
+Icon=/home/xadmin/usr/pycharm-community/bin/pycharm.png
+Categories=Application;Development;Python;IDE
+Version=3
+Type=Application
+Terminal=0
+

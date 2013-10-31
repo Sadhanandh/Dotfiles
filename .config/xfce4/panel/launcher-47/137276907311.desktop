@@ -1,0 +1,36 @@
+
+[Desktop Entry]
+Name=Indicator Remindor
+Comment=Indicator Remindor
+Terminal=false
+Type=Application
+Categories=GNOME;Utility;
+Exec=indicator-remindor
+Icon=indicator-remindor
+Actions=add;quick;stop;manage;prefs;
+X-XFCE-Source=file:///usr/share/applications/indicator-remindor.desktop
+
+[Desktop Action add]
+Name=Add Reminder
+Exec=indicator-remindor --add
+OnlyShowIn=Unity;
+
+[Desktop Action quick]
+Name=Quick Reminder
+Exec=indicator-remindor --quick
+OnlyShowIn=Unity;
+
+[Desktop Action stop]
+Name=Stop Sound
+Exec=indicator-remindor --stop
+OnlyShowIn=Unity;
+
+[Desktop Action manage]
+Name=Manage Reminders
+Exec=indicator-remindor --manage
+OnlyShowIn=Unity;
+
+[Desktop Action prefs]
+Name=Preferences
+Exec=indicator-remindor --preferences
+OnlyShowIn=Unity;

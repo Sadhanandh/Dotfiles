@@ -1,0 +1,7 @@
+style "scroll"
+{
+    GtkScrollbar::slider-width        = 12
+	GthScrollbar::stepper-size        = 12
+}
+
+class "*" style "scroll"

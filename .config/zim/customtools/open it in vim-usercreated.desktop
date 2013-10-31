@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=read me
+NoDisplay=true
+Name=Open it in vim
+Exec=
+X-Zim-ShowInToolBar=true
+Version=1.0
+X-Zim-ReadOnly=false
+X-Zim-ExecTool=gvim % s
+Type=X-Zim-CustomTool
+Icon=
+X-Zim-ShowInContextMenu=
+

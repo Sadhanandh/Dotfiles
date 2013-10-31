@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Picasa Photo Viewer
+Exec=/home/xadmin/usr/google/usr/PicasaPhotoViewer
+Type=Application
+Categories=Graphics;Viewer;
+Comment=The Photo Viewer from Google
+Terminal=false
+Icon=/home/xadmin/usr/google/usr/PicasaPhotoViewer.xpm

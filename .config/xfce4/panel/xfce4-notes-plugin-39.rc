@@ -1,0 +1,24 @@
+
+[Notes]
+PosX=749
+PosY=180
+Width=237
+Height=245
+TabsOrder=Notes;Notes 2;
+LastTab=0
+Above=false
+Sticky=true
+Transparency=9
+Visible=false
+
+[Notes 2]
+PosX=353
+PosY=189
+Width=300
+Height=380
+TabsOrder=Notes;
+LastTab=0
+Above=false
+Sticky=true
+Transparency=9
+Visible=false

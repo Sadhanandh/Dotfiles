@@ -1,0 +1,15 @@
+[OPTIONS]
+height=373
+width=641
+textfont=Helvetica,100,normal,regular
+showtoolbar=1
+showstatusbar=1
+
+[Recent Files]
+FILE1=/home/xadmin/etepaper.sh
+
+[SETTINGS]
+tiptime=10000
+basecolor=#ede9e3
+tippause=500
+

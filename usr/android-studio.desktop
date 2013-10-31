@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Android-Studio
+Comment=The Local Install
+Exec=/home/xadmin/usr/android-studio/bin/studio.sh
+Icon=/home/xadmin/usr/android-studio/bin/idea.png
+Categories=Application;Development;Java;IDE
+Version=3
+Type=Application
+Terminal=0
+

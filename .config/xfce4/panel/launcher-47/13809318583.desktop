@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Name=Hamster Indicator
+GenericName=Time Tracker
+Comment=Project Hamster - track your time
+Type=Application
+Terminal=false
+Icon=hamster-indicator
+Exec=hamster-indicator
+Categories=GNOME;GTK;Utility;
+X-GNOME-Autostart-enabled=true
+X-XFCE-Source=file:///usr/share/applications/hamster-indicator.desktop

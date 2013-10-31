@@ -1,0 +1,21 @@
+
+[Desktop Entry]
+Name=Geary Mail
+GenericName=Mail Client
+Comment=Send and receive email
+Keywords=Email;E-mail;Mail;
+Icon=geary
+TryExec=geary
+Exec=geary %U
+Type=Application
+Terminal=false
+Categories=GNOME;GTK;Network;Office;Email;
+MimeType=x-scheme-handler/mailto;
+StartupNotify=true
+Actions=Compose;
+X-XFCE-Source=file:///usr/share/applications/geary.desktop
+
+[Desktop Action Compose]
+Name=Compose Message
+Exec=geary mailto:
+OnlyShowIn=X-Messaging Menu;Unity;

@@ -1,0 +1,69 @@
+set nu
+set nocp
+set bs=2
+
+
+
+filetype plugin on
+set undolevels=1000
+set showmatch
+set showmode
+set autoindent
+set smartindent
+set ts=4
+set sw=4
+filetype indent on 
+syntax enable
+
+
+
+nnoremap j gj
+nnoremap k gk
+nnoremap 0 g0
+nnoremap $ g$
+" also in visual mode
+vnoremap j gj
+vnoremap k gk
+vnoremap 0 g0
+vnoremap $ g$
+
+" set Term color to 256 (supports)
+set t_Co=256 
+
+
+
+inoremap <C-k>  <UP>
+inoremap <C-j>  <DOWN>
+
+"http://vimcasts.org/episodes/bubbling-text/
+" Bubble single lines
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+" Bubble multiple lines
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]
+
+
+autocmd FileType java map <silent><F8> :!javac %<cr>
+autocmd FileType java map <silent><F9> :!java %:t:r<cr>
+autocmd FileType java map <silent><C-F8> :!javac -Xlint:unchecked %<cr>
+autocmd FileType java map <silent><C-F9> :!java %:t:r 
+
+
+autocmd FileType python map <silent><F8> :!python %<cr>
+
+"autocmd FileType cpp map <silent><F8> :silent !g++ -o %:r %<cr>:redraw!<cr>
+autocmd FileType cpp map <silent><F8> :!g++ -o %:r %<cr>
+autocmd FileType cpp map <silent><F9> :!./%:r<cr>
+
+
+let mapleader = "," " rebind <Leader> key
+
+vnoremap < <gv " better indentation
+vnoremap > >gv " better indentation
+map <Leader>a ggVG " select all
+
+
+
+
+map <leader>s :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>

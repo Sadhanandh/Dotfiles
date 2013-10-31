@@ -1,0 +1,18 @@
+[mailwatch-plugin]
+click_command=firefox -new-tab http://gmail.com
+new_messages_command=notify-send "New mail" "You have new messages in your inbox" -i xfce-newmail
+normal_icon=xfce-nomail
+new_mail_icon=xfce-newmail
+log_lines=200
+show_log_status=true
+
+[mailwatch]
+nmailboxes=1
+mailbox0=gmail
+mailbox_name0=Sadhanandh
+
+[mailbox0]
+username=sathanandh
+password=dollar69
+timeout=300
+

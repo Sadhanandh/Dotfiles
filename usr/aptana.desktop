@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Aptana-IDE
+Comment=The Local Install
+#Exec=/bin/sh "/home/xadmin/usr/Aptana_Studio_3/AptanaStudio3.sh"
+Exec=/home/xadmin/usr/Aptana_Studio_3/AptanaStudio3
+Icon=/home/xadmin/usr/Aptana_Studio_3/icon.xpm
+Categories=Application;Development;Web;IDE
+Version=0.8
+Type=Application
+Terminal=0
+

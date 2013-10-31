@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=DropBox
+GenericName=File Synchronizer
+Comment=The Local Version
+Exec=/bin/sh "/home/xadmin/usr/dropbox-dist/dropbox"
+Terminal=false
+Type=Application
+Icon=dropbox
+Categories=Network;FileTransfer;
+StartupNotify=false

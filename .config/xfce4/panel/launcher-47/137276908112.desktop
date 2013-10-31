@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Type=Application
+Name=Indicator Sticknotes
+GenericName=Sticky Notes
+Comment=Manage your To-Do list and jot down thoughts
+Icon=/opt/extras.ubuntu.com/indicator-stickynotes/Icons/hicolor/256x256/apps/indicator-stickynotes.png
+Exec=/opt/extras.ubuntu.com/indicator-stickynotes/indicator-stickynotes.py
+Categories=Utility;TextTools;
+Hidden=False
+X-GNOME-autostart-enabled=true
+X-XFCE-Source=file:///usr/share/applications/extras-indicator-stickynotes.desktop

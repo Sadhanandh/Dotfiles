@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Name=Cuttlefish
+Comment=Cuttlefish application
+Categories=GNOME;Utility;
+Exec=/opt/extras.ubuntu.com/cuttlefish/bin/cuttlefish
+Icon=/opt/extras.ubuntu.com/cuttlefish/share/cuttlefish/media/tentacle.svg
+Terminal=false
+Type=Application
+X-XFCE-Source=file:///usr/share/applications/extras-cuttlefish.desktop

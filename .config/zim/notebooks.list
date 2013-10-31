@@ -1,0 +1,9 @@
+[NotebookList]
+Default=~/Workspaces/zim
+~/Workspaces/zim
+
+[Notebook]
+uri=~/Workspaces/zim
+name=zim
+interwiki=None
+icon=None

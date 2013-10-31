@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Lightread
+Comment=Lightread application
+Exec="/home/xadmin/usr/lightread/bin/lightread"
+Icon=/home/xadmin/usr/lightread/data/media/lightread.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;Utility;Internet;
+

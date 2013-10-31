@@ -1,0 +1,74 @@
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 0.1.3
+#
+# If you edit this, do not forget to uncomment any lines that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h 
+# The XK_ is not needed. 
+#
+# List of modifier (on my keyboard): 
+#   Control, Shift, Mod1 (Alt), Mod2 (NumLock), 
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll). 
+#
+# Another way to specifie a key is to use 'xev' and set the 
+# keycode with c:nnn or the modifier with m:nnn where nnn is 
+# the keycode or the state returned by xev 
+#
+# This file is created by xbindkey_config 
+# The structure is : 
+# # Remark 
+# "command" 
+# m:xxx + c:xxx 
+# Shift+... 
+
+
+
+
+#keystate_numlock = enable
+#keystate_scrolllock = enable
+#keystate_capslock = enable
+
+
+
+"xbindkeys_show"
+   control+shift + q
+
+# set directly keycode (here control + f with my keyboard)
+#"xterm"
+#   c:41 + m:0x4
+
+# specify a mouse button
+#"xterm"
+#	control + u
+#   control + b:2
+
+"~/.xbindkeys_dir/first1.sh"
+    m:0x15 + c:47
+    Control+Shift+Mod2 + semicolon 
+
+#First  //open
+"~/.xbindkeys_dir/first1.sh"
+    c:42 + m:0x4
+    #Second //close 
+
+"~/.xbindkeys_dir/second2.sh"
+    c:44 + m:0x4
+    # 
+
+#Explorer
+"nautilus"
+    m:0x1c + c:26
+    Control+Alt+Mod2 + e 
+
+#Gvim
+"gvim"
+    m:0x1c + c:42
+    Control+Alt+Mod2 + g 
+
+#
+# End of xbindkeys configuration

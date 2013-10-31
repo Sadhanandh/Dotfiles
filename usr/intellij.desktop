@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IntelliJ
+Comment=The Local Install
+Exec=/home/xadmin/usr/IntelliJ/bin/idea.sh
+Icon=/home/xadmin/usr/IntelliJ/bin/idea.png
+Categories=Application;Development;Java;IDE
+Version=3
+Type=Application
+Terminal=0
+

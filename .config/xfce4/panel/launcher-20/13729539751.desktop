@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=LightTable
+Comment=The Local Install
+Exec=/home/xadmin/usr/LightTable/LightTable
+Icon=/home/xadmin/usr/LightTable/lighttable.png
+Categories=Application;Development;Mobile;IDE
+Version=0.8
+Type=Application
+Terminal=0
+X-XFCE-Source=file:///home/xadmin/usr/lighttable.desktop

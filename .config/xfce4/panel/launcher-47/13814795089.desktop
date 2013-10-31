@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KeepNote
+Comment=Note-taking Application
+Exec=keepnote %f
+Icon=keepnote
+Path=
+Terminal=false
+StartupNotify=false
