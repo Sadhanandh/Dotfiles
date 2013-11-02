@@ -42,13 +42,13 @@ col=3
 row=3
 col=0
 
-[learning_java_4th_edition.pdf]
-row=1
-col=3
-
 [howimadebranch]
 row=5
 col=0
+
+[tofork]
+row=1
+col=1
 
 [SysmonitorScreenlet]
 row=2
@@ -62,9 +62,9 @@ col=3
 row=0
 col=0
 
-[tofork]
+[learning_java_4th_edition.pdf]
 row=1
-col=1
+col=3
 
 [Clairvoyance]
 row=5

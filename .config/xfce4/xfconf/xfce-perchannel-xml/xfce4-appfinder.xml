@@ -5,7 +5,7 @@
   <property name="window-height" type="int" value="558"/>
   <property name="category" type="string" value="All"/>
   <property name="last" type="empty">
-    <property name="window-height" type="int" value="400"/>
+    <property name="window-height" type="int" value="352"/>
     <property name="window-width" type="int" value="420"/>
     <property name="pane-position" type="int" value="180"/>
   </property>

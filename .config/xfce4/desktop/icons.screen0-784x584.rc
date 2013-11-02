@@ -1,58 +1,46 @@
-[xml.save]
-row=0
-col=3
-
-[copy of PDF-XChange 2012 Pro 5.0.255.rar]
-row=2
-col=3
+[code]
+row=3
+col=1
 
 [myfeed]
 row=4
 col=0
 
-[Microsoft_Press_eBook_Programming_Windows_8_Apps_with_HTML_CSS_and_JavaScript_Second_Preview_PDF.pdf]
-row=4
-col=2
-
-[log.txt]
-row=0
-col=5
-
 [cv-master]
 row=2
 col=1
 
-[code]
+[W]
 row=3
-col=1
+col=2
 
-[X]
+[Andro-proj-files]
 row=0
 col=2
 
-[To-Git]
-row=4
-col=1
-
-[dbin]
-row=3
+[work]
+row=2
 col=3
 
-[Books]
-row=2
-col=0
+[MaxFlox.pdf]
+row=0
+col=3
+
+[speech]
+row=1
+col=2
 
 [nltk2.pdf]
 row=0
 col=4
 
-[ToDo]
-row=1
-col=2
+[TODO!]
+row=3
+col=3
 
 [toblog.txt]
-row=3
-col=0
+row=2
+col=2
 
 [howimadebranch]
 row=1
@@ -62,45 +50,41 @@ col=0
 row=1
 col=1
 
-[web]
-row=3
-col=2
+[SysmonitorScreenlet]
+row=2
+col=0
 
-[Screenshot - Saturday 17 August 2013 - 02:00:14  IST.png]
+[Java Generics and Collections.pdf]
 row=1
 col=4
+
+[Screenshot - Sunday 20 October 2013 - 10:55:28  IST.png]
+row=3
+col=0
+
+[learning_java_4th_edition.pdf]
+row=1
+col=3
 
 [Clairvoyance]
 row=0
 col=0
 
-[a.xml]
-row=1
-col=3
-
-[Ticket.pdf]
-row=2
-col=4
-
-[todo]
+[version_control_with_git_2nd_edition.pdf]
 row=4
-col=4
-
-[ONYX BOOX M92 MANUAL for Boox.pdf]
-row=3
-col=4
-
-[RiteNow]
-row=2
 col=2
+
+[To-Git]
+row=4
+col=1
+
+[testin]
+row=4
+col=3
 
 [fb-sta]
 row=0
 col=1
-
-[new]
-row=4
-col=3
 
 [Home]
 row=1

@@ -237,6 +237,7 @@ export PIPE2PY="/home/xadmin/usr/pipe2py/"
 export PYTHON_WEBKIT="/home/xadmin/usr/python-webkit/"
 PATH=$PATH:$DISLIN/bin
 PATH=$PATH:/home/xadmin/usr/lpath
+PATH=$PATH:/home/xadmin/.xmonad/lpath/
 export PYTHONPATH="$DISLIN/python:$DJANGO/:$PYTHON_WEBKIT:$FLASK:$GRIP:$PIPE2PY"
 PATH=$PATH:$DJANGO/django/bin
 PATH=$PATH:$GRIP
@@ -287,7 +288,8 @@ alias xmona="DISPLAY=:1 xmonad &"
 alias xphr="Xephyr -ac -br -noreset -host-cursor -screen 1366x764 -fullscreen -dpi 100 :1 &sleep 1 ;DISPLAY=:1;feh --bg-fill /home/xadmin/Pictures/waterfall.jpg;xmonad &" 
 alias xph="xinit ~/xephyr.xinitrc -- /usr/bin/Xephyr :1 -ac -br -noreset -host-cursor -screen 1366x764 -fullscreen -dpi 100 " 
 alias startme="startx ~/xephyr.xinitrc -- :1"
-alias syncx="/home/xadmin/syncx :0 :1"
+alias syncx="/home/xadmin/syncx :0 :2"
+alias syncx1="/home/xadmin/syncx :0 :1"
 
 #alias trayer1="trayer --edge top --align right --SetDockType true --SetPartialStrut true  --widthtype pixel --heighttype pixel --expand true --width 5 --transparent true --alpha 0 --tint 0x000000 --height 12 --margin 0&"
 alias trayer1="trayer --edge top --align right --SetDockType true --SetPartialStrut true  --expand true --width 5 --transparent true --alpha 0 --tint 0x000000 --height 12 --margin 0&"
@@ -314,6 +316,14 @@ alias myosd2="osd_clock -c blue -s 0 -t &"
 #export TESSDATA_PREFIX=/home/xadmin/Desktop/finaly/pytesser/
 alias minit="xinit -- :2"
 alias ipn="ipython notebook"
+alias pav="pacmd set-sink-volume 0 65536"
+alias fox="env WINEPREFIX='/home/xadmin/.wine' wine start /ProgIDOpen FoxitReader.Document $arg "
+
+
+#
+# To Start xmonad @ :2 
+# 1) minit -> 2) ~/.xmonad/xinitrc
+#
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

@@ -26,10 +26,10 @@ confirm_trash=1
 treetwopanels_lpanel_pct=0.3994452149791956
 status=1
 generaltoolbar=1
-height=749
+height=766
 
 [HISTORY]
-open=mplayer:PicasaPhotoViewer:feh:picasa:vlc:leafpad:gvim:
+open="env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document $arg:/home/xadmin/.local/share/applications/wine-extension-pdf.desktop:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document -file-:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document %f:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document %f\":env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document\":env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document %f\n:wine \"~/.wine/drive_c/Program Files/Foxit Software/Foxit Reader/Foxit Reader.exe\":wine Foxit:wine:mplayer:PicasaPhotoViewer:feh:picasa:vlc:leafpad:gvim:"
 run=gvim %f:gvim:
 filter=*:
 
@@ -126,7 +126,7 @@ name_size=106
 hiddenfiles=0
 
 [PROGS]
-pdfviewer=evince
+pdfviewer="env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document $arg"
 txteditor=gvim
 txtviewer=leafpad
 imgviewer=PicasaPhotoViewer
@@ -139,16 +139,16 @@ deldate_size=150
 origpath_size=200
 liststyle=0
 attr_size=102
-size_size=63
+size_size=62
 user_size=50
 dirs_first=1
 ext_size=102
 grou_size=50
 modd_size=150
 ignore_case=1
-sort_func=ascendingCase
+sort_func=ascendingSize
 showthumbnails=1
-name_size=198
+name_size=256
 hiddenfiles=1
 
 [SETTINGS]
@@ -260,14 +260,14 @@ xfirc=gvim,leafpad,gvim;Xfimage Configuration;config_32x32.png;config_16x16.png;
 control=gvim,leafpad,gvim;Control File;info_32x32.png;info_16x16.png;;
 xferc=gvim,leafpad,gvim;Xfe Configuration;config_32x32.png;config_16x16.png;;
 htm=firefox,firefox,gvim;Hyper Text;html_32x32.png;html_16x16.png;;
-pdf=evince,evince,xournal;PDF Document;pdf_32x32.png;pdf_16x16.png;;
+pdf="env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document $arg,env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document $arg,xournal;PDF Document;pdf_32x32.png;pdf_16x16.png;;"
 changelog=gvim,leafpad,gvim;Log File;info_32x32.png;info_16x16.png;;
 cxx=gvim,leafpad,gvim;C++ Source;cc_32x32.png;cc_16x16.png;;
 
 [FILEDIALOG]
-listmode=8388608
+listmode=0
 type_size=100
-hiddenfiles=0
+hiddenfiles=1
 thumbnails=0
 width=640
 attr_size=100

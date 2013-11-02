@@ -85,6 +85,8 @@ myModMask        = mod1Mask
 myNormalBorderColor  = "#dddddd"
 myFocusedBorderColor = "#ff0000"
  
+
+
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
  
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
@@ -141,13 +143,13 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm              , xK_q     ), restart "xmonad" True)
   --, ((modm .|. controlMask , xK_t     ),spawn "gnome-terminal")
     , ((modm .|. controlMask , xK_t     ),spawn "terminator")
-    , ((modm .|. controlMask , xK_e     ),spawn "xfe")
+    , ((modm .|. controlMask , xK_e     ),spawn "thunar")
     , ((modm .|. controlMask , xK_l     ),spawn "gnome-screensaver-command --lock")
     , ((modm .|. controlMask , xK_q     ),spawn "indicator-remindor -q")
     , ((modm .|. controlMask , xK_m     ),spawn "indicator-remindor -m")
     , ((modm .|. controlMask , xK_z     ),spawn "zim")
     , ((modm .|. controlMask , xK_y     ),spawn "terminator")
-    , ((mod4Mask              , xK_f    ),spawn "thunar" )
+    , ((mod4Mask              , xK_f    ),spawn "xfe" )
     , ((mod4Mask              , xK_t    ),spawn "xfce4-terminal" )
     , ((0                     , xK_Print),spawn "scrot" )
   --, ((0                     , xK_Print),spawn "xfce4-screenshooter -f" ) --https://github.com/liuexp/arch-script/blob/master/.xmonad/easyxmotion.py
@@ -188,11 +190,13 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((mod4Mask .|. shiftMask, xK_Down ), sendMessage $ Swap D)
 
 
- , ((0, xF86XK_AudioRaiseVolume), spawn "amixer -q set Master 10%+")
- , ((0, xF86XK_AudioLowerVolume),spawn "amixer -q set Master 10%-")
- , ((0, xF86XK_AudioMute), spawn "amixer -q set Master toggle")
+ , ((0, xF86XK_AudioRaiseVolume), sequence_ [spawn "amixer -q set Master 10%+",spawn "notify-send $(vol)" ])
+ , ((0, xF86XK_AudioLowerVolume), sequence_ [spawn "amixer -q set Master 10%-",spawn "notify-send $(vol)" ])
+ , ((0, xF86XK_AudioMute), sequence_ [spawn "amixer -q set Master toggle",spawn "notify-send $(vol)" ])
+ --, ((0, xF86XK_AudioRaiseVolume), spawn "amixer -q set Master 10%+")
+ --, ((0, xF86XK_AudioLowerVolume),spawn "amixer -q set Master 10%-")
+ --, ((0, xF86XK_AudioMute), spawn "amixer -q set Master toggle")
  --, ((0, xF86XK_Mail), spawn "urxvtc -e abook")
-
     --Cycle 
    , ((modm .|. controlMask,              xK_Right), nextWS)
    , ((modm .|. controlMask,              xK_Left ), prevWS)
