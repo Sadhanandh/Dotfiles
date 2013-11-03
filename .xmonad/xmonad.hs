@@ -45,6 +45,7 @@ import XMonad.Hooks.InsertPosition
 import XMonad.Hooks.ManageHelpers
 import XMonad.Hooks.EwmhDesktops
 
+import Control.Monad (liftM2)
 import XMonad.Actions.CycleWS
 import XMonad.Actions.NoBorders
 
@@ -343,7 +344,9 @@ myManageHooke = composeAll . concat $
       , [ resource    =? r --> doFloat           | r <- myIgnore]
       , [ title       =? t --> doFloat           | t <- myOtherFloats]
       , [ className   =? c --> doF (W.shift "2:read") | c <- readApps]
-      , [ className   =? c --> doF (W.shift "3:web")  | c <- webApps]
+      , [ resource    =? r --> doF (W.shift "2:read") | r <- readAppsr]
+  --  , [ className   =? c --> doF (W.shift "3:web")  | c <- webApps]
+      , [ className   =? c --> viewShift "3:web"      | c <- webApps]
       , [ className   =? c --> doF (W.shift "4:code") | c <- codeApps]
    -- , [ className   =? c --> doF (W.shift "5:chat") | c <- chatApps]
       ]
@@ -352,6 +355,8 @@ myManageHooke = composeAll . concat $
      float = placeHook simpleSmart <+> doFloat <+> insertPosition Master Newer 
      floatCenter = doCenterFloat <+> insertPosition Master Newer
      floatFull = floatFull <+> insertPosition Master Newer
+
+     viewShift = doF . liftM2 (.) W.greedyView W.shift
  
      myFloats      = ["MPlayer","Indicator-remindor", "Zim","Pavucontrol","Guake.py","Wrapper","Artha","Xfce4-appfinder","xfce4-panel","Gimp","Orage"]
      myFloatCenter = [""]
@@ -361,7 +366,8 @@ myManageHooke = composeAll . concat $
      chatApps      = ["Pidgin"]  -- open on desktop 5
      codeApps      = ["Eclipse","Codeblocks"] -- open on desktop 4
      webApps       = ["Firefox","Chromium-browser"] -- open on desktop 3
-     readApps      = ["Evince","Wine"]  -- open on desktop 2
+     readApps      = ["Evince"]  -- open on desktop 2
+     readAppsr     = ["Kindle.exe","Foxit Reader.exe"]  -- open on desktop 2
      myIgnore      = ["stalonetray-one"]
 
 

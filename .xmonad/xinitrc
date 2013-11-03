@@ -52,7 +52,8 @@ if [ $(echo ${DISPLAY#":"}" > 0"|bc) -ne 0 ]
 fi
 #osdclock &
 #osd_clock -f '-*-lucidatypewriter-medium-*-*-*-13-*-*-*-*-*-*-*' -s 0 -b  -r  -F '%I:%M' &
-dclock -geometry 53x22-8-50
+#Slow--
+#dclock -geometry 53x22-8-50 &
 
 #${HOME}/.xmonad/syncx :0 :2 &
 zim &
