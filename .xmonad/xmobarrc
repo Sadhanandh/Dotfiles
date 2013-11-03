@@ -11,9 +11,12 @@ Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
                     , Run Swap [] 10
                     , Run Date "%a %b %_d %l:%M" "date" 10
                     , Run Com "vol" [] "vol" 10
+                    , Run Com "echo $USER" [""] "uname" 0
+                    , Run Com "printf '%23s' $USER" [""] "cuname" 0
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | Vol: %vol%  <fc=#ee9a00>%date%</fc> | %EGPF%           |       "
+       --, template = "%StdinReader% }{ %cpu% | %memory% * %swap% | Vol: %vol%  <fc=#ee9a00>%date%</fc> |                 %uname%"
+       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | Vol: %vol%  <fc=#ee9a00>%date%</fc> |%cuname%"
        }

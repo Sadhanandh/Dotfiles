@@ -11,7 +11,7 @@ export LANGUAGE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export GTK2_RC_FILES=/home/xadmin/.gtkrc-2.0-current
 trayer --edge top --align right --widthtype pixel --heighttype pixel --expand true --align right --SetDockType true --SetPartialStrut false --tint 0x000000 --transparent true --alpha 0 --margin 0 --height 8 --width 160 &
-
+#tint2 &
 # Activate primary screen
 xrandr --output LVDS-1 --auto --primary
 
@@ -50,7 +50,9 @@ if [ $(echo ${DISPLAY#":"}" > 0"|bc) -ne 0 ]
     then 
     syncxapp :0 $DISPLAY &
 fi
-osdclock &
+#osdclock &
+#osd_clock -f '-*-lucidatypewriter-medium-*-*-*-13-*-*-*-*-*-*-*' -s 0 -b  -r  -F '%I:%M' &
+dclock -geometry 53x22-8-50
 
 #${HOME}/.xmonad/syncx :0 :2 &
 zim &
