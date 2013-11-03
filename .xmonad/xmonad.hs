@@ -171,7 +171,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((mod4Mask              , xK_c    ),spawn "ptoggle dclock -geometry 53x22-8-50" )
     , ((0                     , xK_Print),spawn "scrot" )
   --, ((0                     , xK_Print),spawn "xfce4-screenshooter -f" ) --https://github.com/liuexp/arch-script/blob/master/.xmonad/easyxmotion.py
-    , ((modm                 , xK_v), spawn "~/.xmonad/easyxmotion.py --colour='#0fff00' --font='-adobe-helvetica-bold-r-normal-*-24-*-*-*-*-*-iso8859-1'")
+    , ((modm                 , xK_v), spawn "easyxmotion.py --colour='#0fff00' --font='-adobe-helvetica-bold-r-normal-*-24-*-*-*-*-*-iso8859-1'")
     -- Switching to layouts
     , ((mod4Mask .|. shiftMask              , xK_1           ), sendMessage $ JumpToLayout "Tiled"       )
     , ((mod4Mask .|. shiftMask              , xK_2           ), sendMessage $ JumpToLayout "ThreeCol"    )

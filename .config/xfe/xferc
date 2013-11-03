@@ -1,21 +1,22 @@
 [OPTIONS]
-height=724
 toolstoolbar=1
 panel_view=0
 width=1364
+confirm_drag_and_drop=1
 use_startup_notification=1
 treetwopanels_tree_pct=0.1983356449375867
 confirm_delete=1
 use_sudo=0
 use_trash_can=1
-auto_save_layout=1
+confirm_quit=0
 use_trash_bypass=0
 mount_warn=0
 treepanel_tree_pct=0.1964809384164223
+auto_save_layout=1
 confirm_overwrite=1
 paneltoolbar=1
 confirm_delete_emptydir=1
-confirm_quit=0
+root_mode=1
 ask_before_copy=1
 mount_messages=1
 locationbar=1
@@ -24,9 +25,8 @@ root_warn=0
 confirm_trash=1
 treetwopanels_lpanel_pct=0.3994452149791956
 status=1
-root_mode=1
 generaltoolbar=1
-confirm_drag_and_drop=1
+height=724
 
 [HISTORY]
 open="env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen Amazon.Kindle.magazine.content $arg:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document $arg:/home/xadmin/.local/share/applications/wine-extension-pdf.desktop:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document -file-:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document %f:env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document %f\":env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document\":env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document %f\n:wine \"~/.wine/drive_c/Program Files/Foxit Software/Foxit Reader/Foxit Reader.exe\":wine Foxit:wine:mplayer:PicasaPhotoViewer:feh:picasa:vlc:leafpad:gvim:"
@@ -113,8 +113,8 @@ deldate_size=150
 origpath_size=200
 liststyle=0
 attr_size=53
+size_size=32
 user_size=26
-hiddenfiles=0
 dirs_first=1
 ext_size=53
 grou_size=26
@@ -123,7 +123,7 @@ ignore_case=1
 sort_func=ascendingCase
 showthumbnails=0
 name_size=106
-size_size=32
+hiddenfiles=0
 
 [PROGS]
 pdfviewer="env WINEPREFIX=\"/home/xadmin/.wine\" wine start /ProgIDOpen FoxitReader.Document $arg"
@@ -139,8 +139,8 @@ deldate_size=150
 origpath_size=200
 liststyle=0
 attr_size=102
+size_size=62
 user_size=50
-hiddenfiles=1
 dirs_first=1
 ext_size=102
 grou_size=50
@@ -149,20 +149,20 @@ ignore_case=1
 sort_func=ascendingSize
 showthumbnails=1
 name_size=256
-size_size=62
+hiddenfiles=1
 
 [SETTINGS]
 smooth_scroll=1
 use_clearlooks=1
-tiptime=10000
-file_tooltips=1
+tippause=500
+save_win_pos=0
 basecolor=#ede9e3
 relative_resize=1
 single_click=0
 show_pathlinker=1
-save_win_pos=0
+tiptime=10000
 wheellines=5
-tippause=500
+file_tooltips=1
 
 [FILETYPES]
 ogm=vlc,vlc,;OggMedia Video;video_32x32.png;video_16x16.png;;
