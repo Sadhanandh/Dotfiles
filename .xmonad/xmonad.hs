@@ -356,6 +356,7 @@ myManageHooke = composeAll . concat $
      floatCenter = doCenterFloat <+> insertPosition Master Newer
      floatFull = floatFull <+> insertPosition Master Newer
 
+--https://bbs.archlinux.org/viewtopic.php?id=66854
      viewShift = doF . liftM2 (.) W.greedyView W.shift
  
      myFloats      = ["MPlayer","Indicator-remindor", "Zim","Pavucontrol","Guake.py","Wrapper","Artha","Xfce4-appfinder","xfce4-panel","Gimp","Orage"]
