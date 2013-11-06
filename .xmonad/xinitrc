@@ -4,6 +4,7 @@
 #sudo killall -9 esd
 #xrdb -merge .Xdefaults &
 
+export PATH="$HOME/usr/lpath/:$PATH"
 export PATH="$HOME/.xmonad/lpath:$PATH"
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"

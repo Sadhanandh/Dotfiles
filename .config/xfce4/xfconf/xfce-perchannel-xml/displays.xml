@@ -16,13 +16,13 @@
     </property>
     <property name="CRT1" type="string" value="CRT1">
       <property name="Active" type="bool" value="true"/>
-      <property name="Resolution" type="string" value="1280x720"/>
+      <property name="Resolution" type="string" value="1600x1200"/>
       <property name="RefreshRate" type="double" value="60.000000"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1366"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -52,5 +52,8 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
+  </property>
+  <property name="Schemes" type="empty">
+    <property name="Apply" type="string" value="Default"/>
   </property>
 </channel>

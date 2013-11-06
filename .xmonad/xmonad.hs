@@ -172,7 +172,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((mod4Mask              , xK_c    ),spawn "ptoggle dclock -geometry 53x22-8-50" )
     , ((0                     , xK_Print),spawn "scrot" )
   --, ((0                     , xK_Print),spawn "xfce4-screenshooter -f" ) --https://github.com/liuexp/arch-script/blob/master/.xmonad/easyxmotion.py
-    , ((modm                 , xK_v), spawn "easyxmotion.py --colour='#0fff00' --font='-adobe-helvetica-bold-r-normal-*-24-*-*-*-*-*-iso8859-1'")
+    , ((modm                 , xK_v), spawn "easyxmotion --colour='#0fff00' --font='-adobe-helvetica-bold-r-normal-*-24-*-*-*-*-*-iso8859-1'")
     -- Switching to layouts
     , ((mod4Mask .|. shiftMask              , xK_1           ), sendMessage $ JumpToLayout "Tiled"       )
     , ((mod4Mask .|. shiftMask              , xK_2           ), sendMessage $ JumpToLayout "ThreeCol"    )
@@ -193,7 +193,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
 
-    , ((modm                   , xK_z), withFocused (sendMessage . maximizeRestore))
+    , ((modm                   , xK_s), withFocused (sendMessage . maximizeRestore))
     , ((mod4Mask               , xK_m), withFocused minimizeWindow)
     , ((mod4Mask  .|. shiftMask, xK_m), sendMessage RestoreNextMinimizedWin)
 
@@ -343,12 +343,15 @@ myManageHooke = composeAll . concat $
       , [ className   =? c --> floatFull         | c <- myFloatFull]
       , [ resource    =? r --> doFloat           | r <- myIgnore]
       , [ title       =? t --> doFloat           | t <- myOtherFloats]
-      , [ className   =? c --> doF (W.shift "2:read") | c <- readApps]
-      , [ resource    =? r --> doF (W.shift "2:read") | r <- readAppsr]
-  --  , [ className   =? c --> doF (W.shift "3:web")  | c <- webApps]
-      , [ className   =? c --> viewShift "3:web"      | c <- webApps]
-      , [ className   =? c --> doF (W.shift "4:code") | c <- codeApps]
-   -- , [ className   =? c --> doF (W.shift "5:chat") | c <- chatApps]
+    --, [ className   =? c --> doF (W.shift "2:read") | c <- readApps]
+    --, [ resource    =? r --> doF (W.shift "2:read") | r <- readAppsr]
+    --, [ className   =? c --> doF (W.shift "3:web")  | c <- webApps]
+    --, [ className   =? c --> doF (W.shift "4:code") | c <- codeApps]
+    --, [ className   =? c --> doF (W.shift "5:chat") | c <- chatApps]
+      , [ className   =? c --> viewShift "2:read"| c <- readApps]
+      , [ resource    =? r --> viewShift "2:read"| r <- readAppsr]
+      , [ className   =? c --> viewShift "3:web" | c <- webApps]
+      , [ className   =? c --> viewShift "4:code"| c <- codeApps]
       ]
    where
 
@@ -365,7 +368,7 @@ myManageHooke = composeAll . concat $
      myFloatSimple = [""]
      myOtherFloats = ["Pavucontrol"]
      chatApps      = ["Pidgin"]  -- open on desktop 5
-     codeApps      = ["Eclipse","Codeblocks"] -- open on desktop 4
+     codeApps      = ["Eclipse","Codeblocks","ADT"] -- open on desktop 4
      webApps       = ["Firefox","Chromium-browser"] -- open on desktop 3
      readApps      = ["Evince"]  -- open on desktop 2
      readAppsr     = ["Kindle.exe","Foxit Reader.exe"]  -- open on desktop 2
@@ -384,7 +387,6 @@ main  = do
 
         xmproc  <- spawnPipe "/usr/bin/xmobar ~/.xmonad/xmobarrc"
         xmproc1 <- spawnPipe "/usr/bin/tint2 ~/.xmonad/tint2rc"
-        --xmproc1 <-  spawnPipe "/usr/bin/xmobar ~/.xmobarrc1"
 
  
 --

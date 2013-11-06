@@ -242,6 +242,7 @@ export PYTHONPATH="$DISLIN/python:$DJANGO/:$PYTHON_WEBKIT:$FLASK:$GRIP:$PIPE2PY"
 PATH=$PATH:$DJANGO/django/bin
 PATH=$PATH:$GRIP
 export LD_LIBRARY_PATH=$DISLIN:$LD_LIBRARY_PATH
+export WINEPREFIX="$HOME/.wine/"
 alias stogit="git config credential.helper cache"
 export PYCHARM_JDK="/usr/lib/jvm/java-6-sun/"
 PS1="Sadhanandh@Ubuntu:\w\$ "
