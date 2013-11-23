@@ -201,6 +201,28 @@ function myfind1 ()
 }
 
 
+function mydir ()
+{
+    cd ~/Workspaces/CodeBlocks/;
+}
+
+function mygcc ()
+{
+    g++ $1.cpp -o $1;
+}
+
+function myrun ()
+{
+    ./$1 <in >out;
+    cat out;
+}
+
+function myseq ()
+{
+    mydir;
+    mygcc $1;
+    myrun $1;
+}
 
 oldps=$PS1
 newps='user@host $'
@@ -296,7 +318,7 @@ alias syncx1="/home/xadmin/syncx :0 :1"
 alias trayer1="trayer --edge top --align right --SetDockType true --SetPartialStrut true  --expand true --width 5 --transparent true --alpha 0 --tint 0x000000 --height 12 --margin 0&"
 alias trayer2=" trayer --edge top --align right --widthtype pixel --heighttype pixel --expand true --align right --SetDockType true --SetPartialStrut true --tint 0x000000 --transparent true --alpha 0 --margin 0 --height 8 --width 160"
 
-alias pyf="~/.xmonad/easyxmotion.py --colour='#0fff00' --font='-adobe-helvetica-bold-r-normal-*-24-*-*-*-*-*-iso8859-1'"
+alias pyf="~/.xmonad/lpath/easyxmotion.py --colour='#0fff00' --font='-adobe-helvetica-bold-r-normal-*-24-*-*-*-*-*-iso8859-1'"
 alias xcom="xcompmgr -fF -I-.002 -O-.003 -D1 &"
 alias xmo="xmonad --replace &"
 alias xfw="xfwm4 --replace &"
