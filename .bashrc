@@ -329,6 +329,11 @@ function viopener()
     echo $@;
     gnome-terminal -e "vi $@";
 }
+
+function urldecode()
+{
+    python -c "import urllib;print urllib.unquote('${@}').decode('utf8')"
+}
 alias screenlets="python -u /usr/share/screenlets/screenlets-pack-basic/Sysnitor/SysmonitorScreenlet.py > /dev/null/"
 alias xpanel="xfce4-panel -r"
 alias myosd0="osd_clock -f '-*-lucidatypewriter-medium-*-*-*-17-*-*-*-*-*-*-*' -s 0 -b  -r &"
