@@ -3,6 +3,9 @@
 set go -=T
 
 let g:syntastic_check_on_open=0
+colorscheme solarized 
+
+
 
 " configure tags - add additional tags here or comment out not-used ones
 "set tags+=~/.vim/tags/cpp

@@ -1,92 +1,100 @@
-[code]
+[Functional Programming in Scala.pdf]
+row=4
+col=3
+
+[Perl]
+row=5
+col=2
+
+[programming_scala.pdf]
+row=5
+col=3
+
+[Nlp with python]
+row=1
+col=2
+
+[Frontend]
+row=3
+col=0
+
+[myfeed]
+row=2
+col=1
+
+[suffix-array.pdf]
+row=4
+col=1
+
+[androVM_vbox86tp_4.1.1_r6.1-20130222-gapps-houdini-flash]
 row=3
 col=1
 
-[myfeed]
+[To-Git]
 row=4
 col=0
 
-[cv-master]
-row=2
-col=1
-
-[W]
-row=3
-col=2
-
 [Andro-proj-files]
 row=0
-col=2
-
-[work]
-row=2
-col=2
-
-[MaxFlox.pdf]
-row=5
-col=2
-
-[speech]
-row=1
-col=2
+col=1
 
 [nltk2.pdf]
 row=2
-col=3
-
-[TODO!]
-row=3
-col=3
-
-[toblog.txt]
-row=3
-col=0
-
-[howimadebranch]
-row=5
-col=0
-
-[tofork]
-row=1
-col=1
-
-[SysmonitorScreenlet]
-row=2
-col=0
-
-[Java Generics and Collections.pdf]
-row=0
-col=3
-
-[Screenshot - Sunday 20 October 2013 - 10:55:28  IST.png]
-row=0
-col=0
-
-[learning_java_4th_edition.pdf]
-row=1
-col=3
-
-[Clairvoyance]
-row=5
-col=1
+col=2
 
 [version_control_with_git_2nd_edition.pdf]
 row=4
 col=2
 
-[To-Git]
-row=4
+[Tamming text.pdf]
+row=0
+col=2
+
+[C-FromNoviceToProfessional4thEd(2006)(2b0152d7).pdf]
+row=3
+col=2
+
+[mtps]
+row=1
 col=1
 
-[testin]
-row=4
+[cv-master]
+row=2
+col=0
+
+[Head First Java, 2nd Edition.pdf]
+row=2
 col=3
 
-[fb-sta]
+[Java Generics and Collections.pdf]
 row=0
+col=3
+
+[Clairvoyance]
+row=5
+col=0
+
+[SysmonitorScreenlet]
+row=1
+col=0
+
+[Default.ics]
+row=0
+col=4
+
+[Head first statistics]
+row=5
 col=1
 
-[Home]
+[learning_java_4th_edition.pdf]
 row=1
+col=3
+
+[scala_in_action.pdf]
+row=3
+col=3
+
+[Home]
+row=0
 col=0
 

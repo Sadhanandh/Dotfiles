@@ -62,6 +62,7 @@ zim &
 #zim --plugin trayicon 
 #clipit &
 #clipit --no-icon &
+rainlendar2 &
 parcellite &
 synapse -s &
 guake &

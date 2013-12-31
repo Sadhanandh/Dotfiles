@@ -5,9 +5,10 @@
   <property name="window-height" type="int" value="558"/>
   <property name="category" type="string" value="All"/>
   <property name="last" type="empty">
-    <property name="window-height" type="int" value="352"/>
-    <property name="window-width" type="int" value="420"/>
+    <property name="window-height" type="int" value="104"/>
+    <property name="window-width" type="int" value="575"/>
     <property name="pane-position" type="int" value="180"/>
+    <property name="category" type="string" value="System"/>
   </property>
   <property name="actions" type="array">
     <value type="int" value="4"/>
@@ -39,4 +40,6 @@
       <property name="save" type="bool" value="false"/>
     </property>
   </property>
+  <property name="icon-view" type="bool" value="false"/>
+  <property name="remember-category" type="bool" value="true"/>
 </channel>

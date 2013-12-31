@@ -347,11 +347,18 @@ alias minit="xinit -- :2"
 alias ipn="ipython notebook"
 alias pav="pacmd set-sink-volume 0 65536"
 alias fox="env WINEPREFIX='/home/xadmin/.wine' wine start /ProgIDOpen FoxitReader.Document $arg "
+alias go-eval="go run /usr/lib/go/src/pkg/github.com/sbinet/go-eval/cmd/go-eval/eval.go"
 
+export GOROOT=/usr/lib/go
 
+alias syncer="/usr/local/sbin/GCALDaemon/bin/sync-now.sh"
+alias syncerd="/usr/local/sbin/GCALDaemon/bin/standalone-start.sh &"
 #
 # To Start xmonad @ :2 
 # 1) minit -> 2) ~/.xmonad/xinitrc
+
+#rainlendar2 -e 'Hotkey_Create_New_Event()'
+#rainlendar2 -e 'Global_ShowManagerDialog()'
 #
 
 ### Added by the Heroku Toolbelt

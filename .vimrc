@@ -64,6 +64,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'superjudge/tasklist-pathogen'
 "Bundle 'HenningM/cvim-pathogen'
 Bundle 'xuhdev/SingleCompile'
+Bundle 'derekwyatt/vim-scala'
 "
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
@@ -72,6 +73,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
+Bundle 'jnwhiteh/vim-golang'
 "Bundle 'vim-multiple-cursors'
 
 
@@ -228,7 +230,7 @@ let g:syntastic_enable_balloons = 1
 let g:syntastic_loc_list_height=2
 let g:syntastic_python_checkers=['pyflakes']
 " Tagbar
-let g:tagbar_width = 30
+let g:tagbar_width = 20
 
 " OmniCppComplete
 let OmniCpp_NamespaceSearch = 1
@@ -313,7 +315,7 @@ noremap <silent><F6> :NumbersToggle<cr>
 noremap <silent><F5> :ToggleBG<CR>
 noremap <silent><F4> :TagbarToggle<CR>
 noremap <silent><F3> :NERDTreeToggle<cr>
-noremap <silent><F2> :NERDTreeToggle %:p:h<CR> :TagbarToggle<CR> 
+noremap <silent><F2> :NERDTreeToggle %:p:h<CR> :TagbarToggle<CR> :wincmd l<CR>
 "noremap <silent><F3> :NERDTree %:p:h<CR> :TagbarOpen<CR> 
 "nnoremap <leader>n :NumbersToggle<CR>
 
@@ -342,6 +344,7 @@ map <Leader>a ggVG " select all
 map <Leader>b gg=G " format
 map <Leader>c :%!xmllint --format -<CR>
 
+"use =G or :retab
     
 "let g:SimpylFold_docstring_preview = 1
 
